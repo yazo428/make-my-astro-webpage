@@ -1,0 +1,48 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+        <style>
+            .todayScreenshot{
+                width: 1500px;
+                border: 2px solid black;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>初めまして</h1><time>2025-07-10</time>
+        <h2>Astroのチュートリアルを(後半は白目をむきながら)終えました。</h2>
+        <p>せっかく初めてのwebページを公開できたので、これを少しずつ改造しながら、勉強していこうと思います。</p>
+        <p>僕は基本的にまとめないと忘れるので勉強したことをまとめる感じで記事を書こうかな！</p>
+        <h2>今日やったこと</h2>
+        <ul>
+            <li>astroのチュートリアルを終えた</li>
+            <li>チュートリアルで作ったastroプロジェクトを破壊してとりあえずこの記事を書けるようにまでコードを書いた</li>
+            <li>htmlとmarkdownなるものがあることを知った。とりあえずはhtmlで書く。</li>
+            <li>htmlのheadに何書けばいいのか勉強した。(以下)</li>
+        </ul>
+        <h3>htmlのhead内に書くべきこと</h3>
+        <ul>
+            <li>meta charsetタグ、utf-8に指定しないと文字化ける。文字化けを誘発したい場合以外必須。</li>
+            <li>meta name="viewpoint" content="width=device-eidth"タグ、これのおかげで表示領域がデバイスの幅に合わせて調整されるらしい。必須。</li>
+            <li>titleタグ、ブラウザでページ検索したときにデカく出る文字。</li>
+            <li>meta name="description" content"(説明文)タグ、ブラウザのタイトルの下とかに出るらしい"</li>
+            <li>link rel="stylesheet" href="(CSSファイル名)"タグ、グローバルcssファイルを引っ張ってこれる</li>
+            <li>styleタグ、ページ固有のcssを指定する</li>
+            <li>link rel="icon" href="(アイコン画像のファイル) type="image+xml"タグタブとかブックマークに表示されるアイコンを指定する</li>
+            <li>meta name="generator" content=""タグ、ウェブサイトを作ったツールを示すタグ。このページではJavaScriptでバージョンの部分が動的につけられてるぽい</li>
+        </ul>
+        <h2>次やりたいこと</h2>
+        <ul>
+            <li>なんか見た目をいい感じにしたい。cssいじりたい。</li>
+            <li>ナビゲーションをいい感じにしたい。ヘッダーを作りたい</li>
+        </ul>
+        <h3>↓スクショ。めちゃ質素。<img src="/src/assets/images/screenshots/screenshot-2025-07-10.png" alt="このページの作成日のスクリーンショット" class="todayScreenshot"></a></h3>
+	</body>
+</html>
