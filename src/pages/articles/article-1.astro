@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets"
+import todayScreenshot from"/src/assets/images/screenshots/screenshot-2025-07-10.png"
 ---
 
 <html lang="en">
@@ -11,6 +13,7 @@
         <style>
             .todayScreenshot{
                 width: 1500px;
+                height: auto;
                 border: 2px solid black;
             }
         </style>
@@ -43,6 +46,7 @@
             <li>なんか見た目をいい感じにしたい。cssいじりたい。</li>
             <li>ナビゲーションをいい感じにしたい。ヘッダーを作りたい</li>
         </ul>
-        <h3>↓スクショ。めちゃ質素。<img src="/src/assets/images/screenshots/screenshot-2025-07-10.png" alt="このページの作成日のスクリーンショット" class="todayScreenshot"></a></h3>
+        <h3>↓スクショ。めちゃ質素。<Image src={todayScreenshot} alt="このページの作成日のスクリーンショット" class="todayScreenshot" /></a></h3>
+        <p>追記.この画像入れるのにめちゃ苦労した。astroだとimgタグじゃなくてimportしたうえでImageタグで貼る。大きさ調整とかはclassつけてcssで。widthだけ指定してheigthはautoでアスペクト比守れた。</p>
 	</body>
 </html>
