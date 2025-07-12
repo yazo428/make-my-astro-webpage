@@ -1,6 +1,8 @@
 ---
-import { Image } from "astro:assets"
-import todayScreenshot from"/src/assets/images/screenshots/screenshot-2025-07-10.png"
+import { Image } from "astro:assets";
+import todayScreenshot from"/src/assets/images/screenshots/screenshot-2025-07-10.png";
+import '../../styles/global.css';
+import Header from "../../components/header.astro";
 ---
 
 <html lang="en">
@@ -19,6 +21,7 @@ import todayScreenshot from"/src/assets/images/screenshots/screenshot-2025-07-10
         </style>
 	</head>
 	<body>
+        <Header />
 		<h1>初めまして</h1><time>2025-07-10</time>
         <h2>Astroのチュートリアルを(後半は白目をむきながら)終えました。</h2>
         <p>せっかく初めてのwebページを公開できたので、これを少しずつ改造しながら、勉強していこうと思います。</p>
