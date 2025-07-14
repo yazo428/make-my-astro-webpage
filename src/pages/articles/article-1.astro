@@ -5,13 +5,13 @@ import '../../styles/global.css';
 import Header from "../../components/header.astro";
 ---
 
-<html lang="en">
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>記事1</title>
         <style>
             .todayScreenshot{
                 width: 500px;
@@ -25,7 +25,7 @@ import Header from "../../components/header.astro";
 		<h1>初めまして</h1><time>2025-07-10</time>
         <h2>Astroのチュートリアルを(後半は白目をむきながら)終えました。</h2>
         <p>せっかく初めてのwebページを公開できたので、これを少しずつ改造しながら、勉強していこうと思います。</p>
-        <p>僕は基本的にまとめないと忘れるので勉強したことをまとめる感じで記事を書こうかな！</p>
+        <p>私は基本的にまとめないと忘れるので勉強したことをまとめる感じで記事を書こうかな！</p>
         <h2>今日やったこと</h2>
         <ul>
             <li>astroのチュートリアルを終えた</li>
@@ -49,7 +49,7 @@ import Header from "../../components/header.astro";
             <li>なんか見た目をいい感じにしたい。cssいじりたい。</li>
             <li>ナビゲーションをいい感じにしたい。ヘッダーを作りたい</li>
         </ul>
-        <h3>↓スクショ。めちゃ質素。</h3><p><Image src={todayScreenshot} alt="このページの作成日のスクリーンショット" class="todayScreenshot" /></a></p>
+        <h3>↓スクショ。めちゃ質素。</h3><p><Image src={todayScreenshot} alt="このページの作成日のスクリーンショット" class="todayScreenshot" /></p>
         <p>追記.この画像入れるのにめちゃ苦労した。astroだとimgタグじゃなくてimportしたうえでImageタグで貼る。大きさ調整とかはclassつけてcssで。widthだけ指定してheigthはautoでアスペクト比守れた。あとスマホの画面もpcで確認しながら作業する方法はないかなあ</p>
 	</body>
 </html>

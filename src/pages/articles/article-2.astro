@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import todayScreenshot from"/src/assets/images/screenshots/screenshot-2025-07-15.png";
+import '../../styles/global.css';
+import Header from "../../components/header.astro";
+---
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="virwpoint" content="width=device-eidth">
+        <title>記事2</title> 
+        <meta name="description" content="ヘッダーを作ってみました。">
+        <meta name="generater" content={Astro.generator} >
+        <style>
+            .todayScreenshot{
+                width: 500px;
+                height: auto;
+                border: 2px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <Header />
+        <h1>ヘッダーを作ってみました。</h1><time>2025-07-15</time>
+        <p>今回は前回作ったナビゲーションがなんか寂しいなーーと思ったので、いい感じに装飾することにしました。</p>
+        <h2>今回やったこと</h2>
+        <ul>
+            <li>ヘッダーを装飾するcssを書いた</li>
+            <li>ページの部分をクリーム色っぽくした</li>
+        </ul>
+       <h2>cssについて</h2> 
+       <p>私は緑が好きなので、ヘッダーは緑にすることにしました。</p>
+        <Image src={todayScreenshot} alt="このページの作成日のヘッダーのスクリーンショット" class="todayScreenshot" /> 
+        <p>いい感じの緑にできたんじゃないでしょうか。
+       <br>この緑に対してヘッダー下のページの部分の白がなんかビミョーだったのでクリーム色にしてチルくしました。
+        <br>うん。チルい。</p>
+       <h3>使ったものたち</h3>
+       <ul>
+            <li>カラーピッカー→cssを書くにあたってとっても便利。chromeの拡張機能から引っ張ってきました。</li>
+            <li><a href="https://fuzkue.com/">fuzkue様</a>のサイト→色合いをほぼパクりました。</li>
+        </ul>
+        <h2>次やりたいこと</h2>
+        <p>global.cssを整備して文字とかの装飾を決めたい。そのためにGoogle Fontsを漁る？</p>
+        <p>ナビゲーションの見た目をいじってると、今いるページがどこか一目でわかるように、今いるところを別の見た目で表示したいと思ってきました。(茶色い四角で囲むみたいな)
+        <br>そのコードの書き方を調べてると、ページごとのcssで指定する方法とJavaScriptで動的に生成する方法とがあるようです。
+        <br>ページごとのcssを書いてもいいんですが、それはめんどくさそう。そしてJavaScriptの「動的に」ってのは何か魅力的。
+        <br>ですがどうしましょう。私はhtmlとcssは調べながらなら何とかかけますが、JavaScriptは未履修でした。
+        <br>これではAIに生成させたコードも理解不能。どうしようもない。
+        <br><b>ということで</b>
+        <br>JavaScript履修の旅に行ってきます!本を買いました!分厚いです!長そう!
+        <br>とりあえず一通り履修して、ヘッダーを改良するのを目標にしていきたいと思います。</p>
+    </body>
